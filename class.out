@@ -1,0 +1,108 @@
+Classfile /C:/Users/Никита/Projects/m32/out/com/k381/Main.class
+  Last modified 15 окт. 2018 г.; size 1004 bytes
+  MD5 checksum 53b5bd31dac84898c07e7cb42bcd0af3
+  Compiled from "Main.java"
+public class com.k381.Main
+  minor version: 0
+  major version: 54
+  flags: (0x0021) ACC_PUBLIC, ACC_SUPER
+  this_class: #7                          // com/k381/Main
+  super_class: #8                         // java/lang/Object
+  interfaces: 0, fields: 0, methods: 3, attributes: 3
+Constant pool:
+   #1 = Methodref          #8.#21         // java/lang/Object."<init>":()V
+   #2 = String             #22            // No name!
+   #3 = Methodref          #7.#23         // com/k381/Main.test:(Ljava/lang/String;)V
+   #4 = Fieldref           #24.#25        // java/lang/System.out:Ljava/io/PrintStream;
+   #5 = InvokeDynamic      #0:#29         // #0:makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+   #6 = Methodref          #30.#31        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #7 = Class              #32            // com/k381/Main
+   #8 = Class              #33            // java/lang/Object
+   #9 = Utf8               <init>
+  #10 = Utf8               ()V
+  #11 = Utf8               Code
+  #12 = Utf8               LineNumberTable
+  #13 = Utf8               main
+  #14 = Utf8               ([Ljava/lang/String;)V
+  #15 = Utf8               StackMapTable
+  #16 = Class              #34            // java/lang/String
+  #17 = Utf8               test
+  #18 = Utf8               (Ljava/lang/String;)V
+  #19 = Utf8               SourceFile
+  #20 = Utf8               Main.java
+  #21 = NameAndType        #9:#10         // "<init>":()V
+  #22 = Utf8               No name!
+  #23 = NameAndType        #17:#18        // test:(Ljava/lang/String;)V
+  #24 = Class              #35            // java/lang/System
+  #25 = NameAndType        #36:#37        // out:Ljava/io/PrintStream;
+  #26 = Utf8               BootstrapMethods
+  #27 = MethodHandle       6:#38          // REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #28 = String             #39            // Hello!\u0001
+  #29 = NameAndType        #40:#41        // makeConcatWithConstants:(Ljava/lang/String;)Ljava/lang/String;
+  #30 = Class              #42            // java/io/PrintStream
+  #31 = NameAndType        #43:#18        // println:(Ljava/lang/String;)V
+  #32 = Utf8               com/k381/Main
+  #33 = Utf8               java/lang/Object
+  #34 = Utf8               java/lang/String
+  #35 = Utf8               java/lang/System
+  #36 = Utf8               out
+  #37 = Utf8               Ljava/io/PrintStream;
+  #38 = Methodref          #44.#45        // java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #39 = Utf8               Hello!\u0001
+  #40 = Utf8               makeConcatWithConstants
+  #41 = Utf8               (Ljava/lang/String;)Ljava/lang/String;
+  #42 = Utf8               java/io/PrintStream
+  #43 = Utf8               println
+  #44 = Class              #46            // java/lang/invoke/StringConcatFactory
+  #45 = NameAndType        #40:#50        // makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #46 = Utf8               java/lang/invoke/StringConcatFactory
+  #47 = Class              #52            // java/lang/invoke/MethodHandles$Lookup
+  #48 = Utf8               Lookup
+  #49 = Utf8               InnerClasses
+  #50 = Utf8               (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+  #51 = Class              #53            // java/lang/invoke/MethodHandles
+  #52 = Utf8               java/lang/invoke/MethodHandles$Lookup
+  #53 = Utf8               java/lang/invoke/MethodHandles
+{
+  public com.k381.Main();
+    descriptor: ()V
+    flags: (0x0001) ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 3: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: (0x0009) ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: aload_0
+         1: arraylength
+         2: iconst_1
+         3: if_icmpne     12
+         6: aload_0
+         7: iconst_0
+         8: aaload
+         9: goto          14
+        12: ldc           #2                  // String No name!
+        14: invokestatic  #3                  // Method test:(Ljava/lang/String;)V
+        17: return
+      LineNumberTable:
+        line 5: 0
+        line 6: 17
+      StackMapTable: number_of_entries = 2
+        frame_type = 12 /* same */
+        frame_type = 65 /* same_locals_1_stack_item */
+          stack = [ class java/lang/String ]
+}
+SourceFile: "Main.java"
+InnerClasses:
+  public static final #48= #47 of #51;    // Lookup=class java/lang/invoke/MethodHandles$Lookup of class java/lang/invoke/MethodHandles
+BootstrapMethods:
+  0: #27 REF_invokeStatic java/lang/invoke/StringConcatFactory.makeConcatWithConstants:(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite;
+    Method arguments:
+      #28 Hello!\u0001
