@@ -4,21 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>m32</groupId>
-    <artifactId>m32</artifactId>
-    <version>1.0-Release</version>
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>26.0-jre</version>
-        </dependency>
-    </dependencies>
+    <groupId>m33</groupId>
+    <artifactId>m33</artifactId>
+    <version>1.0-RELIAZE</version>
 
     <build>
-        <finalName>fckMaven</finalName>
+        <finalName>m33</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -27,8 +18,6 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!--<addClasspath>true</addClasspath>
-                            <classpathPrefix>lib/</classpathPrefix>-->
                             <mainClass>com.k381.Main</mainClass>
                         </manifest>
                     </archive>

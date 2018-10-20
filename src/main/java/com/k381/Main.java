@@ -4,7 +4,7 @@ package com.k381;
 public class Main {
     public static void main(String[] args) {
         test(args.length == 1 ? args[0] : "No name");
-        //test(Lists.asList("Sully", args).toString());
+
     }
 
     private static void test(String name) {
